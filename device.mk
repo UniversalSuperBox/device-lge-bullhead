@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl
 
 # for launcher layout
-PRODUCT_PACKAGES += \
-    BullheadLayout
+# PRODUCT_PACKAGES += \
+#     BullheadLayout
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
@@ -182,9 +182,9 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libvolumelistener
 
-PRODUCT_PACKAGES += \
-    librmnetctl \
-    rmnetcli
+#PRODUCT_PACKAGES += \
+#    librmnetctl \
+#    rmnetcli
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
@@ -418,9 +418,9 @@ PRODUCT_COPY_FILES += \
 endif
 
 # setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
-$(call inherit-product, build/target/product/verity.mk)
+# PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/system
+# PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
+# $(call inherit-product, build/target/product/verity.mk)
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)

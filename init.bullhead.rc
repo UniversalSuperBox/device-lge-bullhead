@@ -484,3 +484,8 @@ service fingerprintd /system/bin/fingerprintd
     user system
     group system input
 
+#Change permission for backlight and lcd
+     chown system system /sys/class/backlight/panel/brightness
+       chmod 0666 /sys/class/backlight/panel/brightness
+       chown system radio /sys/class/lcd/panel/lcd_type
+       chown system radio /sys/class/lcd/panel/lcd_power
