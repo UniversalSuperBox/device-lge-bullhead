@@ -26,6 +26,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a7
 
+#Use our local initrd
+BOARD_USE_LOCAL_INITRD := true
+
 ENABLE_CPUSETS := true
 
 TARGET_NO_BOOTLOADER := true
